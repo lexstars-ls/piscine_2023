@@ -90,7 +90,7 @@
 
 // VARIABLES complexe les tableaux ARRAY
 
-let arr1 = [3,5,12,204.5,'hello',true, 'world']
+let arr1 = [3,5,12,204.5,'hello',false, 'world']
 let arrResult1 = `${arr1[4]} ${arr1[6]}`
 const firstElement = arr1[0]
 
