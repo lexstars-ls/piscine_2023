@@ -1,3 +1,23 @@
-h1{
-    color: blueviolet;
+body {
+    user-select: none;
+}
+
+.my-title {
+    color: black;
+    font-size: 50px;
+    transition-property: background-color, color;
+    transition-duration: 2s, 2s;
+}
+
+.my-paragraph {
+    font-size: 30px;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
