@@ -1,0 +1,37 @@
+:root {
+    --dark-blue: #394a51;
+    --soft-blue: #7fa99b;
+    --grey: #fbf2d5;
+    --red: #fdc57b;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, var(--soft-blue), var(--dark-blue));
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--grey);
+}
+
+.result , .result2 , .result3 {
+    margin-block: 80px;
+    font-size: 90px;
+}
+ .pizza{
+    color: salmon;
+    font-size:30px;
+ }
