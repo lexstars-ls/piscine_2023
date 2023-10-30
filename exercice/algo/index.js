@@ -176,3 +176,22 @@ function getNamesAboveAvg(arrPizzas) {
 
     return namesAbove;
 }
+
+// const pizzas = tableau avec toutes les pizzas
+
+const tabIng = document.querySelector('.ingredients')
+
+tabIng.textContent = getPizzaIng(pizzas ,'Hawaïenne')
+
+function getPizzaIng(arr , pizzaName){
+ let tableauPizza = []
+ for(let i = 0 ; i<arr.length ; i++){
+    if(arr[i].name == pizzaName ){  
+        tableauPizza.push(arr[i].ingredients)
+    }
+ }
+ return tableauPizza
+}
+
+
+
