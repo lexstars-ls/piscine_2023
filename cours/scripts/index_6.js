@@ -1,5 +1,5 @@
-* Explications sur les fonctions passées en paramètre d'autre fonction ( fonction callback )
-*/
+// Explications sur les fonctions passées en paramètre d'autre fonction ( fonction callback )
+//*//
 
 const nbs1 = [1, 3, 5]
 const nbs2 = [1, 2, 7]
