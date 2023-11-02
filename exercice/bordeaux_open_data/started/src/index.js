@@ -1,6 +1,7 @@
 const btnRefresh = document.querySelector('.btn')
 const placeNames = document.querySelectorAll('.place-name')
 const placeInfos = document.querySelectorAll('.place-infos')
+const visitors = document.querySelectorAll('.visitors')
 
 btnRefresh.addEventListener('click', () => {
     // 1. On change l'état du bouton
@@ -25,9 +26,12 @@ async function fetchData() {
 
 function displayData(data) {
     // console.log(data)
-    data.results.forEach((element, index) => {
+       data.results.forEach((element, index) => {
         placeNames[index].textContent = element.etablissement_etalib
         placeInfos[index].textContent = `${element.fmicourante} / ${element.fmizonmax}`
-        // let ratio = element.fmicourante / element.fmizonmax
+        let ratio = element.fmicourante / element.fmizonmax
+        visitors[index].style.transform = `scalex(${ratio})`;
+        console.log(ratio)
+       
     })
 }
